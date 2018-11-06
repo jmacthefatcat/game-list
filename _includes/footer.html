@@ -1,0 +1,25 @@
+<footer class="container">
+  <div class="drawer">
+    <div class="box center-center">
+      <small>Made by <a href="https://zerooctave.ca">Jmacthefatcat</a> with <a href="https://jmacthefatcat.github.io/space-case">space-case</a></small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+
+     $(".notes-open").click(function(){
+         $(this).next().toggle("slide");
+         $(this).delay(800).toggle().prev().delay(1000).toggle();
+     })
+
+     $(".notes-close").click(function(){
+         $(this).toggle().next().next().toggle("slide");
+         $(this).next().toggle();
+     })
+
+  });
+</script>

@@ -1,0 +1,17 @@
+---
+title: Game List
+timezone: America/Toronto
+
+collections:
+  games:
+    output: false
+
+defaults:
+- scope:
+    path: ''
+    type: games
+  values:
+    title: 'unnamed'
+    platform: 'platformS'
+    in-progress: false
+    completed: false

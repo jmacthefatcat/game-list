@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<main class="container">
+  <section class="drawer horizontal-center">
+    {% for game in site.games %}
+    <article class="box-50 {% if game.in-progress == true %}in-progress-order{% elsif game.completed == true %}completed-order{% else %}not-started-order{% endif %} ">
+      <div class="box-100 game-box">
+        <h4 class="{% if game.in-progress == true %}in-progress-colour{% elsif game.completed == true %}completed-colour{% else %}not-started-colour{% endif %}">{{ game.title }}</h4>
+        <small{% if game.in-progress == false and game.completed == false %} style="color: lightsteelblue"{% endif %}>{{ game.platform }}</small><br><br>
+        {% if game.in-progress == true %}
+        <span class="notes-tab">Notes</span>
+        {% endif %}
+      </div>
+      <div class="box-100 notes-holder" style="background-color: {% if game.in-progress == true %}royalblue{% elsif game.completed == true %}#37CA6E{% else %}lightsteelblue{% endif %};">
+        {% if game.in-progress == true %}
+        <div class="box-100 text-right notes-close">
+          Hide
+        </div>
+        <div class="box-100 text-right notes-open">
+          Show
+        </div>
+        <ul class="box-100 notes">
+          {% for note in game.notes %}
+          <li> - {{ note }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+     </div>
+    </article>
+    {% endfor %}
+
+  </section>
+</main>

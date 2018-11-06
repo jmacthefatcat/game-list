@@ -1,0 +1,89 @@
+body {
+  font-family: arial;
+}
+.container {
+  max-width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .login {
+    justify-content: flex-end;
+    display: flex;
+    display: -webkit-flex;
+  }
+}
+
+.legend li {
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.square {
+  width: 1em;
+  height: 1em;
+}
+
+.in-progress-colour {
+  color: royalblue;
+}
+
+
+.in-progress-order {
+  order: 1;
+}
+
+.not-started-colour {
+  color: lightsteelblue;
+}
+
+.not-started-order {
+  order: 3;
+}
+
+.completed-colour {
+  color: mediumseagreen;
+}
+
+.completed-order {
+  order: 2;
+}
+
+.game-box {
+  background-color: aliceblue;
+  margin: 1em 0.5em 0em 0.5em;
+  border-radius: 0.8em 0.8em 0em 0em;
+}
+
+.notes-holder {
+  background-color: #64677A;
+  color: #F0F0F2;
+  margin: -0.75em 0.5em 1em 0.5em;
+  border-radius: 0em 0em 0.8em 0.8em;
+}
+
+.notes {
+  display: none;
+}
+
+.notes-tab {
+  color: #fcfcff;
+  font-size: .85em;
+  background-color: royalblue;
+  border: .2rem solid royalblue;
+  border-radius: .4rem;
+  display: inline-block;
+  padding: .25em 0.5em;
+  text-align: center;
+
+}
+
+.notes-open {
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+.notes-close {
+  font-size: 0.8em;
+  text-decoration: underline;
+  display: none;
+}
