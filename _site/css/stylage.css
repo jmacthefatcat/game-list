@@ -5,7 +5,15 @@ body {
   max-width: 90%;
 }
 
+.logo {
+  max-width: 20%;
+}
+
 @media screen and (min-width: 768px) {
+  .logo {
+    max-width: 5.653em;
+  }
+  
   .login {
     justify-content: flex-end;
     display: flex;
