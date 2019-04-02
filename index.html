@@ -8,7 +8,7 @@ layout: default
     <article class="box-50 {% if game.in-progress == true %}in-progress-order{% elsif game.completed == true %}completed-order{% else %}not-started-order{% endif %} ">
       <div class="box-100 game-box">
         <h4 class="{% if game.in-progress == true %}in-progress-colour{% elsif game.completed == true %}completed-colour{% else %}not-started-colour{% endif %}">{{ game.title }}</h4>
-        <small{% if game.in-progress == false and game.completed == false %} style="color: lightsteelblue"{% endif %}>{{ game.platform }}</small><br><br>
+        <small class="uppercase"{% if game.in-progress == false and game.completed == false %} style="color: lightsteelblue"{% endif %}>{{ game.platform }}</small><br><br>
         {% if game.in-progress == true %}
         <span class="notes-tab">Notes</span>
         {% endif %}

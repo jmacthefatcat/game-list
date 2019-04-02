@@ -1,14 +1,14 @@
 body {
   font-family: canada-type-gibson, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 b, strong {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a:focus {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .container {
@@ -23,7 +23,7 @@ a:focus {
   .logo {
     max-width: 5.653em;
   }
-  
+
   .login {
     justify-content: flex-end;
     display: flex;
