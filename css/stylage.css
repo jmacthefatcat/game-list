@@ -11,6 +11,14 @@ a:focus {
   font-weight: 600;
 }
 
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .container {
   max-width: 90%;
 }
