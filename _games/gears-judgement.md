@@ -1,4 +1,4 @@
 ---
-title: Gears of War: Judgement
+title: Gears of War - Judgement
 platform: Xbox One
 ---
