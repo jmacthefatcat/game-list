@@ -1,5 +1,5 @@
 ---
-title: Red Dead Redemption 2
+title: 'Red Dead Redemption 2'
 platform: Playstation 4
 in-progress: true
 notes:
