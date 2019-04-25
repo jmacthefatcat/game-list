@@ -1,5 +1,5 @@
 ---
-title: Gears of War
+title: 'Gears of War'
 platform: Xbox One
 in-progress: true
 ---

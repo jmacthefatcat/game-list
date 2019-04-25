@@ -1,4 +1,4 @@
 ---
-title: 'Final Fantasy Crystal Chronicles'
+title: 'Final Fantasy: Crystal Chronicles'
 platform: 'Nintendo Wii'
 ---

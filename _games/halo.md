@@ -1,5 +1,5 @@
 ---
-title: Halo
+title: 'Halo'
 platform: Xbox One
-completed: true 
+completed: true
 ---

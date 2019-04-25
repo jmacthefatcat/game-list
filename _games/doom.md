@@ -1,4 +1,4 @@
 ---
 title: 'Doom'
-platform: 'PC'
+platform: 'Xbox One'
 ---

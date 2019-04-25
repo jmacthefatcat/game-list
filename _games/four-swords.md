@@ -1,5 +1,5 @@
 ---
-title: 'LoZ Four Swords'
+title: 'Legend of Zelda: Four Swords'
 platform: 'Nintendo Wii'
 in-progress: true
 notes:

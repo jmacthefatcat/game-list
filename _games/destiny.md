@@ -1,7 +1,7 @@
 ---
-title: 'Mortal Kombat XL'
+title: 'Destiny'
 platform: Playstation 4
 completed: true
 notes:
-- 'Fight!'
+- 'Get shit loot'
 ---
