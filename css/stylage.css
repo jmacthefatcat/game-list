@@ -1,4 +1,4 @@
-body {
+/*body {
   font-family: canada-type-gibson, sans-serif;
   font-weight: 400;
 }
@@ -14,10 +14,8 @@ a:focus {
 h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
   font-weight: 600;
 }
+*/
 
-.uppercase {
-  text-transform: uppercase;
-}
 
 .container {
   max-width: 90%;
@@ -47,6 +45,7 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 .square {
   width: 1em;
   height: 1em;
+  margin: 0 1rem;
 }
 
 .in-progress-colour {

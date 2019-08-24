@@ -1,5 +1,6 @@
 ---
 title: Game List
+version: 1.8a
 timezone: America/Toronto
 
 collections:
@@ -12,6 +13,19 @@ defaults:
     type: games
   values:
     title: 'unnamed'
-    platform: 'platformS'
+    platform: 'platform'
     in-progress: false
     completed: false
+    notes:
+      -
+
+plugins:
+  - jekyll-admin
+
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration

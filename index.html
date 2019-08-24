@@ -2,32 +2,32 @@
 layout: default
 ---
 
-<main class="container">
-  <section class="drawer horizontal-center">
+<main class="p-h-xxl">
+  <section class="d-flex flex-row flex-wrap space-between">
+
     {% for game in site.games %}
-    <article class="box-50 {% if game.in-progress == true %}in-progress-order{% elsif game.completed == true %}completed-order{% else %}not-started-order{% endif %} ">
-      <div class="box-100 game-box">
-        <h4 class="{% if game.in-progress == true %}in-progress-colour{% elsif game.completed == true %}completed-colour{% else %}not-started-colour{% endif %}">{{ game.title }}</h4>
-        <small class="uppercase"{% if game.in-progress == false and game.completed == false %} style="color: lightsteelblue"{% endif %}>{{ game.platform }}</small><br><br>
-        {% if game.in-progress == true %}
-        <span class="notes-tab">Notes</span>
-        {% endif %}
+    <article class="sm-w-100 w-50 p-xxs d-flex flex-col flex-nowrap align-start space-between {% if game.in-progress == true %}in-progress-order{% elsif game.completed == true %}completed-order{% else %}not-started-order{% endif %} ">
+
+      <div class="w-100 p-m {% if game.in-progress == true %}in-progress-colour{% elsif game.completed == true %}completed-colour{% else %}not-started-colour{% endif %}" style="background-color: aliceblue; border-radius: 0.4rem 0.4rem 0 0; z-index: 2;">
+        <h4 class="text-bold {% if game.in-progress == true %}in-progress-colour{% elsif game.completed == true %}completed-colour{% else %}not-started-colour{% endif %}">{{ game.title }}</h4>
+        <span class="text-uppercase text-s text-bold text-subtle">{{ game.platform }}</span>
       </div>
-      <div class="box-100 notes-holder" style="background-color: {% if game.in-progress == true %}royalblue{% elsif game.completed == true %}#37CA6E{% else %}lightsteelblue{% endif %};">
+
+      <div class="p-l-m p-r-m p-t-xs p-b-xs w-100" style="background-color: {% if game.in-progress == true %}royalblue{% elsif game.completed == true %}#37CA6E{% else %}lightsteelblue{% endif %}; color: var(--white); border-radius: 0 0 0.4rem 0.4rem;">
+
         {% if game.in-progress == true %}
-        <div class="box-100 text-right notes-close">
-          Hide
-        </div>
-        <div class="box-100 text-right notes-open">
-          Show
-        </div>
-        <ul class="box-100 notes">
-          {% for note in game.notes %}
-          <li> - {{ note }}</li>
-          {% endfor %}
-        </ul>
+        <span class="text-bold text-uppercase text-s">
+          <details>
+            <summary>Notes</summary>
+            {% for note in game.notes %}
+            <span class="d-block">- {{ note }}</span>
+            {% endfor %}
+          </details>
+        </span>
         {% endif %}
-     </div>
+
+      </div>
+
     </article>
     {% endfor %}
 
