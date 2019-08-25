@@ -13,20 +13,20 @@ layout: default
         <span class="text-uppercase text-s text-bold text-subtle">{{ game.platform }}</span>
       </div>
 
-      <div class="p-l-m p-r-m p-t-xs p-b-xs w-100" style="background-color: {% if game.in-progress == true %}royalblue{% elsif game.completed == true %}#37CA6E{% else %}lightsteelblue{% endif %}; color: var(--white); border-radius: 0 0 0.4rem 0.4rem;">
+      <details class="p-l-m p-r-m p-t-xs p-b-xs w-100" style="background-color: {% if game.in-progress == true %}royalblue{% elsif game.completed == true %}#37CA6E{% else %}lightsteelblue{% endif %}; color: var(--white); border-radius: 0 0 0.4rem 0.4rem;">
 
         {% if game.in-progress == true %}
         <span class="text-bold text-uppercase text-s">
-          <details>
+
             <summary>Notes</summary>
             {% for note in game.notes %}
             <span class="d-block">- {{ note }}</span>
             {% endfor %}
-          </details>
+
         </span>
         {% endif %}
 
-      </div>
+      </details>
 
     </article>
     {% endfor %}
