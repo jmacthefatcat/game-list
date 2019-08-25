@@ -17,12 +17,10 @@ layout: default
 
         {% if game.in-progress == true %}
         <span class="text-bold text-uppercase text-s">
-
-            <summary>Notes</summary>
-            {% for note in game.notes %}
-            <span class="d-block">- {{ note }}</span>
-            {% endfor %}
-
+          <summary>Notes</summary>
+          {% for note in game.notes %}
+          <span class="d-block">- {{ note }}</span>
+          {% endfor %}
         </span>
         {% endif %}
 
