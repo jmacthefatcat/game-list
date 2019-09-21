@@ -1,8 +1,8 @@
 ---
 title: Fire Watch
 platform: xbox one
-in-progress: true
-completed: false
+in-progress: false
+completed: true
 notes:
 - Replay game choosing different options
 ---

@@ -1,7 +1,8 @@
 ---
-title: 'Path of Exil'
-platform: 'Xbox One'
-completed: false
+title: Path of Exile
+platform: Xbox One
+in-progress: true
 notes:
-- ''
+- totally not diablo
 ---
+
